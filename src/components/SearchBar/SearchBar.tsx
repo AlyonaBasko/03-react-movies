@@ -16,9 +16,6 @@ export default function SearchBar({ onSubmit }: SearchBarProps) {
     }
 
     onSubmit(searchQuery.trim());
-
-    const form = document.querySelector(`.${css.form}`) as HTMLFormElement;
-    form?.reset();
   };
   return (
     <header className={css.header}>
